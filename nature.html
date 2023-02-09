@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navigation1.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="logo">Art Gallery</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery1.html">Gallery ></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="nature.html">Nature</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="art&culture.html">Art & Culture</a></li>
+                    </ul>
+                </div>
+            
+            </li>
+
+            
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </div>
+    <div class="full-img" id="fullimgBox"> 
+        <img src="nature1.jpg" id="fullimg">
+        <button class="btn"><a href="hire.html">Hire</a></button>
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="nature1.jpg" onclick="openFullImg(this.src)">
+        <img src="nature2.jpg" onclick="openFullImg(this.src)">
+        <img src="nature3.jpg" onclick="openFullImg(this.src)">
+        <img src="nature16.jpg" onclick="openFullImg(this.src)">
+        <img src="nature29.jpg" onclick="openFullImg(this.src)">
+        <img src="nature6.jpg" onclick="openFullImg(this.src)">
+        <img src="nature34.jpg" onclick="openFullImg(this.src)">
+        <img src="nature27.jpg" onclick="openFullImg(this.src)">
+        <img src="nature33.jpg" onclick="oepnFullImg(this.src)">
+        <img src="nature32.jpg" onclick="oepnFullImg(this.src)">
+        <img src="nature18.jpeg" onclick="oepnFullImg(this.src)">
+        <img src="nature23.jpg" onclick="oepnFullImg(this.src)">
+    </div>
+    <script>
+        var fullimgBox=document.getElementById("fullimgBox");
+        var fullimg=document.getElementById("fullimg");
+        function openFullImg(photo)
+        {
+            fullimgBox.style.display="flex";
+            fullimg.src=photo;
+        }
+    
+        function closeFullImg()
+        {
+            fullimgBox.style.display="none";
+        }
+    
+    </script>
+
+</body>
+</html>

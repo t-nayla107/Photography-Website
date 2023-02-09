@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navigation1.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="logo">Art Gallery</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery1.html">Gallery ></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="nature.html">Nature</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="art&culture.html">Art & Culture</a></li>
+                    </ul>
+                </div>
+            
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </div>
+    <div class="Con_form">
+        <form>
+            <h1>Hire Us</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile no." placeholder="Mobile No." required>
+            <h3>Put your chosen photograph catagory</h3>
+            <select id="Catagory">
+                 <option value="Catagory">Select Catagory</option>
+                 <option value="nature">Nature</option>
+                 <option value="food">Food</option>
+                 <option value="travel">Travel</option>
+                 <option value="art&culture">Art & Culture</option>
+            </select>
+            <h3>Any special requirment?</h3>
+            <textarea required placeholder="Type here....."></textarea>
+            <input type="submit" value="Send" id="submit">
+        </form>
+    </div>
+
+</body>
+</html>

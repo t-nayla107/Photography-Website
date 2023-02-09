@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="navigation1.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="logo">Art Gallery</h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery1.html">Gallery ></a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="nature.html">Nature</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="art&culture.html">Art & Culture</a></li>
+                    </ul>
+                </div>
+            
+            </li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <div class="full-img" id="fullimgBox"> 
+        <img src="un22.jpg" id="fullimg">
+        <button class="btn"><a href="hire.html">Hire</a></button>
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="un22.jpg" onclick="openFullImg(this.src)">
+        <img src="un26.png" onclick="openFullImg(this.src)">
+        <img src="un27.jpg" onclick="openFullImg(this.src)">
+        <img src="art9.jpg" onclick="openFullImg(this.src)">
+        <img src="culture7.jpeg" onclick="openFullImg(this.src)">
+        <img src="un21.jpg" onclick="openFullImg(this.src)">
+        <img src="culture10.jpg" onclick="openFullImg(this.src)">
+        <img src="culture11.jpg" onclick="openFullImg(this.src)">
+        <img src="culture4.jpg" onclick="openFullImg(this.src)">
+        <img src="un33.jpg" onclick="openFullImg(this.src)">
+        <img src="un32.jpg" onclick="openFullImg(this.src)">
+        <img src="un31.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var fullimgBox=document.getElementById("fullimgBox");
+        var fullimg=document.getElementById("fullimg");
+        function openFullImg(photo)
+        {
+            fullimgBox.style.display="flex";
+            fullimg.src=photo;
+        }
+    
+        function closeFullImg()
+        {
+            fullimgBox.style.display="none";
+        }
+    
+    </script>
+</body>
+</html>
